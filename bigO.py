@@ -6,3 +6,7 @@
 # concerned with. So the worst case of insertion sort is that it is a O(n^2) 
 
 #We can use big O notation to talk about time but also about space
+
+#The worst-case (and average-case) complexity of the insertion sort algorithm is O(n^2). 
+#Meaning that, in the worst case,  the time taken to sort a list is proportional to the
+#square of the number of elements in the list
