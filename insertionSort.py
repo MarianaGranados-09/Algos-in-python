@@ -1,3 +1,6 @@
+#Measuring time precisely for efficiency
+from timeit import default_timer as timer
+
 #insertion sort relies on looking at each item in a list one at a time and inserting it into a new list that ends up being correctly sorted 
 
 #Insertion in insertion sort 
@@ -47,7 +50,7 @@ def insert_cabinet(cabinet, to_insert):
 # to_insert = cabinet.pop(0);
 # newCabinet = insert_cabinet(newCabinet, to_insert)
 
-cabinet = [8,4,6,1,2,5,3,7]
+
 def insertion_sort(cabinet):
     newCabinet = []
     #while there is an element in the list cabinet
@@ -56,5 +59,14 @@ def insertion_sort(cabinet):
         newCabinet = insert_cabinet(newCabinet, to_insert)
     return(newCabinet)
 
+start = timer()
+cabinet = [8,4,6,1,2,5,3,7]
 sortedCabinet = insertion_sort(cabinet)
+end = timer()
+print(end - start)
+
 print(sortedCabinet)
+
+#Instead of using timing in seconds which relies on the hardware of the computer, 
+#a more reliable measure of algorithm performance is the number of steps required to execute the algo. 
+#36 steps to accomplish insertion sort for a list of len 8
