@@ -40,3 +40,6 @@ def binarySearch(sorted_cabinet, looking_for):
 
 guess = binarySearch(sorted_cabinet, 8)
 print(sorted_cabinet[guess])
+
+#Binary search runs in logarithmic time or log time
+#Sorted list of 128 names: 7 guesses
