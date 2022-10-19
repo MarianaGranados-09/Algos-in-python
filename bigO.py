@@ -10,3 +10,10 @@
 #The worst-case (and average-case) complexity of the insertion sort algorithm is O(n^2). 
 #Meaning that, in the worst case,  the time taken to sort a list is proportional to the
 #square of the number of elements in the list
+
+#Some common Big O run times
+#log time: binary search
+#linear time: simple search
+# n*log n: a fast sorting algo like quicksort
+# n^2: a slow sorting algo like selection sort
+#n! a really slow algo like the traveling salesperson 
